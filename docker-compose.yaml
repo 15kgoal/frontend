@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  frontend:
+    container_name: 5kgoal-frontend
+    image: httpd
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - .:/usr/local/apache2/htdocs/
